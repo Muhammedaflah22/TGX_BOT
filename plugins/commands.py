@@ -107,10 +107,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     )
-                k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins</b>")
-                await asyncio.sleep(300)
-                await m.delete()
-                await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+                k = await message.reply_text()
                 return
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -121,10 +118,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     )
-                k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
-                await asyncio.sleep(300)
-                await m.delete()
-                await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+                k = await message.reply_text()
                 return
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -187,10 +181,7 @@ async def start(client, message):
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 )
-            k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
-            await asyncio.sleep(300)
-            await m.delete()
-            await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+            k = await message.reply_text()
             return
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -225,10 +216,7 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
     )
-    k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
-    await asyncio.sleep(300)
-    await m.delete()
-    await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+    k = await message.reply_text()
     return             
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
