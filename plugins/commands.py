@@ -34,7 +34,7 @@ async def start(client, message):
         buttons = [
                 InlineKeyboardButton('⚙️ 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚙️', url=f'https://t.me/TBM_Bot_Updates')
                ],[
-                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/+MOrvSbM3zfVjNmRl')
+                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
               ],[
                 InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
@@ -56,7 +56,7 @@ async def start(client, message):
         buttons = [
                 InlineKeyboardButton('⚙️ 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚙️', url=f'https://t.me/TBM_Bot_Updates')
                ],[
-                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/+MOrvSbM3zfVjNmRl')
+                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
               ],[
                 InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
