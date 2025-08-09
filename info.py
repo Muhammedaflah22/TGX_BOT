@@ -53,10 +53,10 @@ P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
 ➲ <a href=https://t.me/CINEMA_COMPANYE_Backup> @CINEMA_COMPANY </a>
 ➲ <a href=https://t.me/+JObo3SXOiZRlNzll> @Friday_Filim_House </a>
+➲ <a href=https://t.me/TBM_Bot_Updates> @TBM_Bot_Updates </a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
