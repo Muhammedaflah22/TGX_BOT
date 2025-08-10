@@ -773,13 +773,14 @@ async def manual_filters(client, message, text=False):
                 break
     else:
         return False
+
 from pyrogram import Client, filters
 import asyncio
 
 @Client.on_message(filters.group & filters.text)
 async def delete_after_delay_group(client, message):
-    if len(message.text) > 2:
-        await asyncio.sleep(300)  # 5 minutes
+    if len(message.text) > 0:  # message length > 0
+        await asyncio.sleep(300)  # 5 minutes delay
         try:
             await message.delete()
         except Exception as e:
