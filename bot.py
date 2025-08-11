@@ -108,12 +108,6 @@ class Bot(Client):
                 yield message
                 current += 1
 
-from pyrogram import Client
-import plugins  # This will auto-load all plugins/group.py
-
-app = Client("your_bot")
-
-if __name__ == "__main__":
 
 app = Bot()
 app.run()
