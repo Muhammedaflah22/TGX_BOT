@@ -674,8 +674,7 @@ async def auto_filter(client, msg):
         files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
         if not files:
             # Instead of spell check, return "Search Failed"
-            sdell = await message.reply_text("𝗠𝗼𝘃𝗶𝗲 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 𝗗𝘂𝗱𝗲😔
-𝗗𝗼 𝘀𝗲𝗮𝗿𝗰𝗵 𝗶𝗻 𝗴𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗼𝗽𝘆 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗮𝗻𝗱 𝘀𝗲𝗻𝗱 𝗶𝗳 𝘁𝗵𝗮𝘁 𝗺𝗼𝘃𝗶𝗲𝘀 𝗢𝗧𝗧")
+            sdell = await message.reply_text("𝗠𝗼𝘃𝗶𝗲 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 𝗗𝘂𝗱𝗲😔𝗗𝗼 𝘀𝗲𝗮𝗿𝗰𝗵 𝗶𝗻 𝗴𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗼𝗽𝘆 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗮𝗻𝗱 𝘀𝗲𝗻𝗱 𝗶𝗳 𝘁𝗵𝗮𝘁 𝗺𝗼𝘃𝗶𝗲𝘀 𝗢𝗧𝗧")
             await asyncio.sleep(15)
             await sdell.delete()
             return 
