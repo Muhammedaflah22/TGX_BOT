@@ -41,7 +41,7 @@ You can find the bot commands here.
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
 
-    STATUS_TXT = """╔═════ 𝙱𝙾𝚃 𝙰𝙱𝙾𝚄𝚃 ══════╗ 
+    STATUS_TXT = """╔═════ 𝙱𝙾𝚃 𝙰𝙱𝙾𝚄𝚃 ════════╗ 
 〄 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 〄 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 〄 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
@@ -49,7 +49,7 @@ You can find the bot commands here.
 〄 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ➲ 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 ☞ @TBM_Admin
 ⌲ 𝗘𝗱𝗶𝘁𝗲𝗿 ☞ @MR_BOT_EDITER 
-╚═════ 𝙱𝙾𝚃 𝙰𝙱𝙾𝚄𝚃 ══════╝</b>"""
+╚═════ 𝙱𝙾𝚃 𝙰𝙱𝙾𝚄𝚃 ════════╝</b>"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
