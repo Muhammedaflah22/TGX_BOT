@@ -32,11 +32,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [
-                InlineKeyboardButton('⚙️ 𝐁𝐎𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚙️', url=f'https://t.me/+fgT9ogX7z144NjM1')
+                InlineKeyboardButton('⚙️ 𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚙️', url=f'https://t.me/+fgT9ogX7z144NjM1')
                ],[
-                InlineKeyboardButton('⚓ 𝐌𝐎𝐕𝐈𝐄 𝐒𝐄𝐀𝐑𝐂𝐇 𝐆𝐑𝐎𝐔𝐏 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
+                InlineKeyboardButton('⚓ 𝗠𝗢𝗩𝗜𝗘 𝗦𝗘𝗔𝗥𝗖𝗛 𝗚𝗥𝗢𝗨𝗣 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
               ],[
-                InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
+                InlineKeyboardButton('🖥 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗘𝗡𝗡𝗘𝗟 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -54,11 +54,11 @@ async def start(client, message):
           return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [
-                InlineKeyboardButton('⚙️ 𝐁𝐎𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚙️', url=f'https://t.me/+fgT9ogX7z144NjM1')
+                InlineKeyboardButton('⚙️ 𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚙️', url=f'https://t.me/+fgT9ogX7z144NjM1')
                ],[
-                InlineKeyboardButton('⚓ 𝐌𝐎𝐕𝐈𝐄 𝐒𝐄𝐀𝐑𝐂𝐇 𝐆𝐑𝐎𝐔𝐏 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
+                InlineKeyboardButton('⚓ 𝗠𝗢𝗩𝗜𝗘 𝗦𝗘𝗔𝗥𝗖𝗛 𝗚𝗥𝗢𝗨𝗣 ⚓', url=f'https://t.me/CINEMA_COMPANYE_Backup')
               ],[
-                InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
+                InlineKeyboardButton('🖥 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗘𝗡𝗡𝗘𝗟 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
