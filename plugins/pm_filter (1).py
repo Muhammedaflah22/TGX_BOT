@@ -720,7 +720,7 @@ async def auto_filter(client, msg):
             [InlineKeyboardButton(text="📃 1/1", callback_data="pages")]
         )
 
-    cap=f"<b>Search Query:{title}\n👇𝙏𝙖𝙥 𝙤𝙣 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 𝙗𝙪𝙩𝙩𝙤𝙣 𝙖𝙣𝙙 𝙩𝙝𝙚𝙣 𝙨𝙩𝙖𝙧𝙩 𝙩𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙.👇</b>"  # result for group
+    cap = f"<b>𝖧𝖾𝗒 {message.from_user.mention}\n👇𝙏𝙖𝙥 𝙤𝙣 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚 𝙗𝙪𝙩𝙩𝙤𝙣 𝙖𝙣𝙙 𝙩𝙝𝙚𝙣 𝙨𝙩𝙖𝙧𝙩 𝙩𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙.👇</b>"  # result for group
 
     # Send the message with the search results and buttons
     autodel = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
