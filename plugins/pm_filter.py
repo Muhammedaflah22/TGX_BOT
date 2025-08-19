@@ -1,4 +1,4 @@
-# Kanged From @TroJanZheX
+
 import asyncio,re,ast,math,logging,tgcrypto,time,shutil,psutil,os,sys
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
@@ -387,43 +387,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('🚫 Bans', callback_data='ban'),
-            InlineKeyboardButton('💬 Custom Message', callback_data='custom')
-        ], [
-            InlineKeyboardButton('📝 Custom Captions', callback_data='captions'),
-            InlineKeyboardButton('Delete', callback_data='delete')
-        ],[
-            InlineKeyboardButton('🗳 Force Sub', callback_data='forcesub'),
-            InlineKeyboardButton('🔍 Filters', callback_data='filters')
-        ],[
-            InlineKeyboardButton('📚 Index', callback_data='inedx'),
-            InlineKeyboardButton('📢 Promotions', callback_data='promotions')
-        ],[
-            InlineKeyboardButton('⚙ Settings', callback_data='settis'),
-            InlineKeyboardButton('📊 CODE ✨', url=f"https://t.me/mrtechmoviebot")
-        ],[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='start')
-        ]]        
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )    
-    elif query.data == "ban":
-        buttons = [[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="<b><blockquote>User Management\n<i>Ban or unban users to control access to the bot.</i></blockquote>\n\n‣ /ban - <i>Ban a user from bot</i> - /ban user_id\n‣ /unban - <i>Unban a user from bot</i> - /unban user_id</b>",
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "custom":
-        buttons = [[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -563,14 +527,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         cpu_usage = psutil.cpu_percent()
         ram_usage = psutil.virtual_memory().percent
         disk_usage = psutil.disk_usage('/').percent
-        ms_g = f"""<b>⚙️ 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗎𝗌</b>
-
-    🕔 𝖴𝗉𝗍𝗂𝗆𝖾: <code>{currentTime}</code>
-    🛠 𝖢𝖯𝖴 𝖴𝗌𝖺𝗀𝖾: <code>{cpu_usage}%</code>
-    🗜 𝖱𝖠𝖬 𝖴𝗌𝖺𝗀𝖾: <code>{ram_usage}%</code>
-    🗂 𝖳𝗈𝗍𝖺𝗅 𝖣𝗂𝗌𝗄 𝖲𝗉𝖺𝖼𝖾: <code>{total}</code>
-    🗳 𝖴𝗌𝖾𝖽 𝖲𝗉𝖺𝖼𝖾: <code>{used} ({disk_usage}%)</code>
-    📝 𝖥𝗋𝖾𝖾 𝖲𝗉𝖺𝖼𝖾: <code>{free}</code> """
+       
         await query.message.edit_text(
             text=ms_g,
             reply_markup=reply_markup,
@@ -591,14 +548,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         cpu_usage = psutil.cpu_percent()
         ram_usage = psutil.virtual_memory().percent
         disk_usage = psutil.disk_usage('/').percent
-        ms_g = f"""<b>⚙️ 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗎𝗌</b>
-
-    🕔 𝖴𝗉𝗍𝗂𝗆𝖾: <code>{currentTime}</code>
-    🛠 𝖢𝖯𝖴 𝖴𝗌𝖺𝗀𝖾: <code>{cpu_usage}%</code>
-    🗜 𝖱𝖠𝖬 𝖴𝗌𝖺𝗀𝖾: <code>{ram_usage}%</code>
-    🗂 𝖳𝗈𝗍𝖺𝗅 𝖣𝗂𝗌𝗄 𝖲𝗉𝖺𝖼𝖾: <code>{total}</code>
-    🗳 𝖴𝗌𝖾𝖽 𝖲𝗉𝖺𝖼𝖾: <code>{used} ({disk_usage}%)</code>
-    📝 𝖥𝗋𝖾𝖾 𝖲𝗉𝖺𝖼𝖾: <code>{free}</code> """
+        
         await query.message.edit_text(
             text=ms_g,
             reply_markup=reply_markup,
