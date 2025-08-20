@@ -723,7 +723,7 @@ async def auto_filter(client, msg):
     f"<b>Search Query: {query}\n"
     f"Total Results: {total_results}\n"
     f"Page: {page}/{total_pages}\n\n"
-    "🔻Tap on the file button and then start to download.🔻</b>"
+    "👇Tap on the file button and then start to download.👇</b>"
 )  # result for group
 
     # Send the message with the search results and buttons
