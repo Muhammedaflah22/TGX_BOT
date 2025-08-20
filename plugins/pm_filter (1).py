@@ -761,14 +761,22 @@ async def manual_filters(client, message, text=False):
                         await client.send_cached_media(
                             group_id,
                             fileid,
-                            caption=reply_text or "",
+                            caption=reply_text or "f"Search Query: {query}\n"
+    f"Total Results: {total}\n"
+    f"Page: {page}/{pages}\n\n"
+    "🔻Tap on the file button and then start to download.🔻"
+",
                             reply_to_message_id=reply_id
                         )
                     else:
                         button = eval(btn)
                         await message.reply_cached_media(
                             fileid,
-                            caption=reply_text or "",
+                            caption=reply_text or ""f"Search Query: {query}\n"
+    f"Total Results: {total}\n"
+    f"Page: {page}/{pages}\n\n"
+    "🔻Tap on the file button and then start to download.🔻"
+)",
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
