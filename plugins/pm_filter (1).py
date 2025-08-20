@@ -719,8 +719,7 @@ async def auto_filter(client, msg):
             [InlineKeyboardButton(text="📃 1/1", callback_data="pages")]
         )
 
-    cap = (
-    f"<b>Search Query: {query}\n"
+    cap =(f"<b>Search Query: {query}\n"
     f"Total Results: {total_results}\n"
     f"Page: {page}/{total_pages}\n\n"
     "👇Tap on the file button and then start to download.👇</b>"
