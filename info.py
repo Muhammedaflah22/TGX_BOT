@@ -59,9 +59,7 @@ CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
 ➲ <a href=https://t.me/TBM_Bot_Updates> @TBM_Bot_Updates </a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b>Query: {query}
-Results: {results}
-Page: {page}/{total_pages}")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "Query: {query}\nResults: {results}\nPage: {page}/{total_pages}"")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
