@@ -30,6 +30,9 @@ from aiohttp import web as webserver
 
 from plugins.database import get_db_instance  # If database.py is inside plugins folder
 
+collection = get_db_instance("db1")  # or "db2"
+collection.insert_one({"name": "test"})
+
 PORT_CODE = environ.get("PORT", "8080")
 
 class Bot(Client):
