@@ -28,6 +28,8 @@ from plugins.webcode import bot_run
 from os import environ
 from aiohttp import web as webserver
 
+from plugins.database import get_db_instance  # If database.py is inside plugins folder
+
 PORT_CODE = environ.get("PORT", "8080")
 
 class Bot(Client):
