@@ -32,9 +32,20 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split('')] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
+DATABASE_URIS = {
+    "db1": environ.get("DB1_URI", ""),
+    "db2": environ.get("DB2_URI", "")
+}
+
+DATABASE_NAMES = {
+    "db1": environ.get("DB1_NAME", "Cluster0"),
+    "db2": environ.get("DB2_NAME", "Cluster1")
+}
+
+COLLECTION_NAMES = {
+    "db1": environ.get("DB1_COLLECTION", "vjcollection"),
+    "db2": environ.get("DB2_COLLECTION", "newcollection")
+}
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
